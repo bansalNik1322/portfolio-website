@@ -110,7 +110,8 @@
 
     <div class="contactContainer" id="contactContainer">
         <h2>Contact Me</h2>
-        <form name="contactForm" class="contactForm" onsubmit="return validateForm()">
+        <form name="contactForm" action="https://httpbin.org/post" method="post" class="contactForm"
+            onsubmit="return validateForm()">
             <div>
                 <label for="name">Name</label>
                 <input type="text" onkeypress="changeValidate()" name="name">
