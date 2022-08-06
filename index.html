@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="topnav" id="myTopnav">
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#infographicContainer">About</a>
+            <a href="#educationContainer">Education</a>
+            <a href="#contactContainer">Contact Me</a>
+        </nav>
+        <a class="icon" id="btn" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+
+    <!-- Main Container -->
+    <div class="mainContainer" id="mainContainer">
+        <div class="taglineContainer">
+            <span class="">I'm a Developer</span>
+        </div>
+        <div class="imgContainer">
+            <img src="download.jfif" alt="">
+            <div>
+                <button><a href="download (1).jfif" download><i class="fas fa-download"></i> Resume</a></button>
+                <button><a href="#contactContainer"><i class="fas fa-user"></i> ContacT Me</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inforgraphic Section -->
+
+    <div class="infographicContainer" id="infographicContainer">
+        <div class="cont1">
+            <h1>Me and my Academic Honesty</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, culpa? Voluptate voluptatum ratione
+                error, dolore quaerat vel, quis provident assumenda quae rerum quia, nihil earum ad velit cumque porro
+                blanditiis. Dolorem, impedit deserunt fuga nihil eius iste nesciunt atque odit mollitia quibusdam. Eius
+                praesentium, exercitationem reprehenderit quae atque eum excepturi?</p>
+        </div>
+        <div class="cont2">
+            <h1>Basic Information</h1>
+            <div class="infoContainer">
+                <p class="query">Name</p>
+                <p class="queryAns">Nikhil Bansal</p>
+            </div>
+            <div class="infoContainer">
+                <p class="query">Date</p>
+                <p class="queryAns">Nikhil Bansal</p>
+            </div>
+            <div class="infoContainer">
+                <p class="query">Course</p>
+                <p class="queryAns">Nikhil Bansal</p>
+            </div>
+            <div class="infoContainer">
+                <p class="query">Section</p>
+                <p class="queryAns">Nikhil Bansal</p>
+            </div>
+            <div class="infoContainer">
+                <p class="query">Professor</p>
+                <p class="queryAns">Nikhil Bansal</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="educationContainer" id="educationContainer">
+        <h2>Education</h2>
+        <div class="firstContainer">
+            <img src="download (1).jfif" alt="">
+            <div class="detailContainer">
+                <div>
+                    <h3>Bachelor's Degree</h3>
+                    <h5>SENECA COLLEGE</h5>
+                    <p>Under the supervision of Dr. Awesome.</p>
+                    <p>Awarded will all scholership in the world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="firstContainer">
+            <img src="download (1).jfif" alt="">
+            <div class="detailContainer">
+                <div>
+                    <h3>Bachelor's Degree</h3>
+                    <h5>SENECA COLLEGE</h5>
+                    <p>Under the supervision of Dr. Awesome.</p>
+                    <p>Awarded will all scholership in the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contactContainer" id="contactContainer">
+        <h2>Contact Me</h2>
+        <form name="contactForm" class="contactForm" onsubmit="return validateForm()">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" onkeypress="changeValidate()" name="name">
+                <p id="name" style="color: red;"></p>
+            </div>
+            <div>
+                <label for="name">Email</label>
+                <input type="email" name="email">
+                <p id="email"></p>
+            </div>
+            <div>
+                <label for="name">Address</label>
+                <input type="text" name="address">
+                <p id="address"></p>
+            </div>
+            <div>
+                <label for="name">City</label>
+                <select autocomplete="AB" name="city">
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="YT">Yukon</option>
+                </select>
+                <p id="city"></p>
+            </div>
+
+
+            <div>
+                <label for="">Why do you wanna contact me.</label>
+                <p id="reason"></p>
+                <label for="">Comment</label>
+                <input type="radio" name="reason" onchange="handleChange(this)" class="reason" value="comment">
+                <label for="">Ask a question</label>
+                <input type="radio" class="reason" onchange="handleChange(this)" name="reason" value="question">
+                <label for="">Hiring </label>
+                <input type="radio" name="reason" onchange="handleChange(this)" class="reason" value="hiring">
+            </div>
+
+            <div class="hourlyRate" id="hourlyRate">
+                <label for="hourlyRate">Enter Your Hourly Rate (in US $)</label>
+                <input type="number" name="hourlyRate">
+                <p id="hourlyRate2"></p>
+            </div>
+
+            <div class="message">
+                <label for="">Enter your message</label>
+                <textarea name="message" id="" name="message" rows="5"></textarea>
+                <p id="message"></p>
+            </div>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
